@@ -61,7 +61,7 @@ controller.hears( 'coffee', 'message,direct_message', async ( bot, message ) => 
     await bot.beginDialog( 'coffee_chat' );
 });
 
-controller.commandHelp.push( { command: 'coffee', text: 'Simple dialog example with threads' } );
+controller.commandHelp.push( { command: 'tea', text: 'Simple dialog example with threads' } );
 
 }
 
