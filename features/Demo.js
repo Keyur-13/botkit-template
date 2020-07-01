@@ -56,9 +56,9 @@ convo.addMessage( 'Excellent!  I like {{ vars.statedDrink }} too', 'ask_drink' )
 
 controller.addDialog( convo );
 
-controller.hears( 'coffee', 'message,direct_message', async ( bot, message ) => {
+controller.hears( 'tea', 'message,direct_message', async ( bot, message ) => {
 
-    await bot.beginDialog( 'coffee_chat' );
+    await bot.beginDialog( 'tea_chat' );
 });
 
 controller.commandHelp.push( { command: 'tea', text: 'Simple dialog example with threads' } );
